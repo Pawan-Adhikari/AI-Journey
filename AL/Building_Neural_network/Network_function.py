@@ -45,23 +45,21 @@ inputs = np.around(np.random.uniform(size=5), decimals=2)
 
 small_network = initialize_network(5,3,[3,2,3],1)
 
-weighted_sum_from_first_node = compute_weighted_sum(inputs, small_network["Layer_1"]["Node_1"]["weights"], small_network["Layer_1"]["Node_1"]["bias"]) 
-
-activation_from_first_node = node_activation(weighted_sum_from_first_node)
-print(weighted_sum_from_first_node)
-print(activation_from_first_node)
+print(small_network)
 
 
 def forward_propogation(network, input):
     for layer in network:
         output_of_this_layer = []
-        for node in network[layer]:
+        for node in network[layer]:         
             weighted_sum = compute_weighted_sum(input, network[layer][node]["weights"], network[layer][node]["bias"])
             activation = node_activation(weighted_sum)
             output_of_this_layer.append(activation)
         input = output_of_this_layer
     return input
+
 final_output = forward_propogation(small_network,inputs)
+
 
 print(final_output)
 
