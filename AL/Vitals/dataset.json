@@ -1,0 +1,71 @@
+{
+  "user": {
+    "gender": "female",
+    "age": "30 - 40",
+    "height": "190cm - 200cm"
+  },
+  "dataTypes": [
+    [
+      {
+        "signal": "acceleration",
+        "unit": "meters per second squared"
+      }
+    ],
+    [
+      {
+        "signal": "distance",
+        "unit": "meters"
+      }
+    ],
+    [
+      {
+        "signal": "elevation",
+        "unit": "meters"
+      }
+    ],
+    [
+      {
+        "signal": "pulse",
+        "unit": "number of heart beats per minute"
+      }
+    ],
+    [
+      {
+        "signal": "motion-activities",
+        "unit": "occurrences"
+      }
+    ],
+    [
+      {
+        "signal": "pace",
+        "unit": "minutes per kilometer"
+      }
+    ],
+    [
+      {
+        "signal": "respirationRate",
+        "unit": "milliseconds of breaths per minute"
+      }
+    ],
+    [
+      {
+        "signal": "rr",
+        "unit": "RR intervals in milliseconds"
+      }
+    ],
+    [
+      {
+        "signal": "temperature",
+        "unit": "celsius"
+      }
+    ],
+    [
+      {
+        "signal": "steps",
+        "unit": "number of steps"
+      }
+    ]
+  ],
+  "from": "2025-02-11T09:37:41.637Z",
+  "to": "2025-02-11T12:20:38.467Z"
+}
