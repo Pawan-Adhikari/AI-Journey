@@ -6,6 +6,7 @@ data = pd.read_csv(filepath)
 #number of bars
 n = 2308
 
+#splitting a plot
 fig, ax = plt.subplots()
 ax.bar(np.arange(n),data.value.iloc[:n])
 
